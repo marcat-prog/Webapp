@@ -1,0 +1,139 @@
+/* General Text Elements */
+body, p {
+  font-family: Calibri, sans-serif; /* Web page text elements font */
+  color: #212529; /* Default font color */
+}
+
+/* Navbar */
+.navbar {
+  font-family: Consolas, monospace; /* Font for the navbar */
+  background-color: #0E8EA8; /* Background color */
+  color: #fff; /* Font color */
+  border: none;
+}
+
+.navbar .nav-link {
+  color: #212529; /* Font color for menu items */
+}
+
+.navbar .dropdown-menu {
+  background-color: #83D1E1; /* Background for sub-menu items */
+  border-color: #212529; /* Border color */
+  color: #212529; /* Font color */
+}
+
+/* Table */
+table {
+  font-family: Consolas, monospace; /* Table font */
+  border-collapse: collapse; /* Remove spacing between table cells */
+  width: 100%; /* Full width */
+  border: 1px solid #212529; /* Border color */
+}
+
+table thead {
+  background-color: #0E8EA8; /* Table header background */
+  color: #fff; /* Table header font color */
+}
+
+table th, table td {
+  padding: 10px; /* Padding for cells */
+  text-align: left; /* Align text to the left */
+  border: 1px solid #212529; /* Border color for cells */
+}
+
+table tbody tr:hover {
+  background-color: #5f95f8; /* Subtle hover effect for rows */
+}
+/* Styles for Staff Table Buttons */
+.in-button {
+  background-color: #28a745; /* Green background */
+  color: white;             /* White text */
+  border: none;             /* Remove border */
+  border-radius: 5px;       /* Rounded corners */
+  padding: 5px 10px;        /* Padding */
+  cursor: pointer;          /* Pointer cursor on hover */
+  font-size: 16px;          /* Font size */
+  transition: background-color 0.6s ease; /* Smooth transition */
+}
+
+.in-button:enabled {
+  background-color: #1aa21a; /* Gray for disabled button */
+  cursor: not-allowed;       /* No pointer for disabled button */
+}
+
+/* Hover effect for enabled 'In' button */
+.in-button:hover:not(:disabled) {
+  background-color: #054312; /* Darker green on hover */
+}
+
+.out-button {
+  background-color: #dc3545; /* Red background */
+  color: white;             /* White text */
+  border: none;             /* Remove border */
+  border-radius: 5px;       /* Rounded corners */
+  padding: 5px 10px;        /* Padding */
+  cursor: pointer;          /* Pointer cursor on hover */
+  font-size: 14px;          /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.out-button:disabled {
+  background-color: #cccccc; /* Gray for disabled button */
+  cursor: not-allowed;       /* No pointer for disabled button */
+}
+
+/* Hover effect for enabled 'Out' button */
+.out-button:hover:not(:disabled) {
+  background-color: #c82333; /* Darker red on hover */
+}
+/* Styles for "Clear" Button */
+.clear-button {
+  background-color: #dc3545; /* Red background */
+  color: white;             /* White text */
+  border: none;             /* Remove border */
+  border-radius: 5px;       /* Rounded corners */
+  padding: 5px 10px;        /* Padding */
+  cursor: pointer;          /* Pointer cursor */
+  font-size: 14px;          /* Font size */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.clear-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+/* Toast Notification Styles */
+.toast {
+  position: fixed; /* Fix position on the page */
+  top: 50%; /* Center vertically */
+  right: 20px; /* Position near the right edge */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  background-color: #f8d7da; /* Light red background for error/warning */
+  color: #721c24; /* Dark red text for contrast */
+  padding: 15px 20px; /* Spacing inside the toast */
+  border: 1px solid #f5c6cb; /* Border matching the red theme */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  z-index: 9999; /* Ensure it's above other elements */
+  display: none; /* Hidden by default */
+}
+
+/* Toast Close Button */
+.toast button {
+  background: none; /* No background for button */
+  border: none; /* No border */
+  color: #721c24; /* Match the toast text color */
+  font-size: 16px; /* Slightly larger for visibility */
+  font-weight: bold; /* Bold text for clarity */
+  cursor: pointer; /* Pointer cursor on hover */
+  float: right; /* Align to the right */
+}
+
+.toast button:hover {
+  color: #a71d2a; /* Darker red on hover */
+}
+
+/* Show Toast */
+.toast.show {
+  display: block; /* Make the toast visible */
+  animation: fadeIn 0.5s, fadeOut 0.5s 4.5s; /* Fade in and fade out */
+}
